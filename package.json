@@ -1,0 +1,26 @@
+{
+  "name": "url-sortner-be",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/syedbadhusha/urlsortner-backend.git"
+  },
+  "author": "Syed Badhusha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/syedbadhusha/urlsortner-backend/issues"
+  },
+  "homepage": "https://github.com/syedbadhusha/urlsortner-backend#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "mongodb": "^6.5.0",
+    "nodemon": "^3.1.0"
+  }
+}
