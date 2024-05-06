@@ -23,7 +23,7 @@ const userControllers = {
       const user = await User.findOne({ userName });
       if (user) {
         return res
-          .status(400)
+          .status(500)
           .json({ message: `${user.userName} User Already Exists` });
       }
       // Hashing password
@@ -106,7 +106,6 @@ const userControllers = {
   currentUser:async (req,res)=>{
     try{
         const userId  = req.userId;
-        console.log(userId)
         const user = await User.findById(userId).select('-passwordHash -__v -_id');
         if(!user){
             return res.status(500).json({message:'User Not Found'})
