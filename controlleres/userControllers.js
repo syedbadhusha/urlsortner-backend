@@ -144,7 +144,7 @@ const userControllers = {
           try{
             await transporter.sendMail(mailing);
           }catch(error){
-            res.status(500).json({message:error.message})
+            return res.status(500).json({message:error.message})
           }
           res.status(200).json({message:'Sent Mail For Reset Password'})
     }catch(error){
