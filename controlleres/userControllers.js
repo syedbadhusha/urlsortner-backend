@@ -1,7 +1,7 @@
 const User = require("../models/users");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
-const { JWT_Secret, SenderMailID, SenderMailPassword, SenderName } = require("../utils/Config");
+const { JWT_Secret, SenderMailID, SenderMailPassword, SenderName } = require("./utils/Config");
 const nodemailer = require("nodemailer");
 
 const transporter = nodemailer.createTransport({
