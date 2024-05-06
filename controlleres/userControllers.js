@@ -49,7 +49,7 @@ const userControllers = {
           try{
             await transporter.sendMail(mailing)
           }catch(error){
-            throw 'Check sender and Receiver Credentials'
+            return res.status(500).json({message:'Check sender and Receiver Credentials'})
           }
     } catch (error) {
       res.status(500).json({ message: error.message });
