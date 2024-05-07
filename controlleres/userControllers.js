@@ -34,7 +34,7 @@ const userControllers = {
         userName,
         passwordHash,
         activated:false,
-        passwordChangeLink
+        passwordChangeLink:''
       });
       const savedUser = await newUser.save();
       res
