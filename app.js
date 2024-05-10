@@ -5,7 +5,7 @@ const cookieParser = require('cookie-parser');
 const morgan = require('morgan');
 const urlRouter = require('./routes/urlRouter');
 const app = express();
-const whitelist = ['http://localhost:5173']
+const whitelist = ['http://localhost:5173','https://urlsortner-backend-z4gv.onrender.com']
 app.use(cors(
     {
         origin(reqOrigin, callback){
