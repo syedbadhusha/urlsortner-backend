@@ -5,6 +5,6 @@ const urlSchma = new mongoose.Schema({
     urlLink:String,
     sortUrlLink:String,
     date:Date,
-    clickedCount:Number
+    clickedCount:Array
 })
 module.exports = mongoose.model('Url',urlSchma,'urls');

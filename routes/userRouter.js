@@ -5,7 +5,7 @@ const userRoter = express.Router();
 
 userRoter.post('/',userControllers.register)
 userRoter.put('/useractivation',userControllers.verifyAccount)
-userRoter.get('/login',userControllers.login)
+userRoter.post('/login',userControllers.login)
 userRoter.get('/currentuser',auth.isAuth,userControllers.currentUser)
 userRoter.get('/logout',auth.isAuth,userControllers.logOut)
 userRoter.post('/sendforgotmail',userControllers.sendFogotMail)
