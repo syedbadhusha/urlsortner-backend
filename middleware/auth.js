@@ -12,6 +12,7 @@ const auth = {
             try{
                 const decodedToken = jwt.verify(token,JWT_Secret)
                 req.userId = decodedToken.id;
+                res.cookie('token',token,{sameSite:'strict'})
                 next();
             }catch(error){
                 return res.status(500).json({message:'Invalid Token'})

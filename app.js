@@ -5,7 +5,7 @@ const cookieParser = require('cookie-parser');
 const morgan = require('morgan');
 const urlRouter = require('./routes/urlRouter');
 const app = express();
-const whitelist = ['http://localhost:5173','https://luxury-queijadas-04da4f.netlify.app']
+const whitelist = ['http://localhost:5173','http://localhost:5173:1','https://luxury-queijadas-04da4f.netlify.app','https://luxury-queijadas-04da4f.netlify.app:1']
 app.use(cors(
     {
         origin(reqOrigin, callback){
